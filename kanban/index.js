@@ -12,15 +12,15 @@ function attachDragEvents(target){
     })
 }
 
-function removebtn(target){
-    let btn = document.createElement('button');
-    btn.innerText = "X"
-    target.appendChild(btn);
-    btn.addEventListener("click", () => {
-        target.remove();
-    })
+// function removebtn(target){
+//     let btn = document.createElement('button');
+//     btn.innerText = "X"
+//     target.appendChild(btn);
+//     btn.addEventListener("click", () => {
+//         target.remove();
+//     })
 
-}
+// }
 
 //add event listener on btn
 addTaskBtn.addEventListener('click',()=>{
@@ -29,10 +29,10 @@ addTaskBtn.addEventListener('click',()=>{
 
     //creating p tag
     let p = document.createElement('p');
-    let btn = document.createElement('span');
-    btn.classList.add("del-btn")
+    // let btn = document.createElement('span');
+    // btn.classList.add("del-btn")
     btn.textContent = "XX"
-    p.appendChild(btn)
+    // p.appendChild(btn)
     p.classList.add("item");
     p.setAttribute('draggable',true)
     p.contentEditable = true
